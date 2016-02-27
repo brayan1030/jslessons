@@ -6,15 +6,23 @@
 </head>
 <body>
 <script type="text/javascript">
-	/*function convertirDolares(dolar,nombre){
+var global= "var- globar"
+
+	function convertirDolares(dolar,nombre){
 		//var dolar = 100
+		var local ="soy local"
 		var conver = dolar *3500
-
+     
 		document.write("Sr : "+ nombre+conver)
-
+        document.write("</br>")
+        document.write("Me Esta Invocando Desde una Funcion"+global)
+        document.write(local)
 	}
-	convertirDolares(200, "Fernando Su Cambio es: ")*/
-	
+
+	convertirDolares(200, "Fernando Su Cambio es: ")
+	document.write("</br>")
+	document.write("estoy fuera de la funcion"+global)
+	document.write(local)
 </script>
 </body>
 </html>
